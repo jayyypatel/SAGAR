@@ -1,0 +1,61 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Environmental Protection and Sustainable Development</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Environmental Protection and Sustainable Development</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Securing economic development, social equity and justice, and environmental protection is the goal
+                    of sustainable development. Although these three factors can work in harmony, they are often found
+                    to conflict with one another. During the latter half of the 20th century economic development for a
+                    better standard of living has been instrumental in damaging the environment. We are now in a
+                    position whereby we are consuming more resources than ever, and polluting the Earth with waste
+                    products.
+                </p>
+                <p>
+                    The aim of sustainable development is to balance our, environmental and social needs, allowing
+                    prosperity for now and future generations. Sustainable development consists of a long-term,
+                    integrated approach to developing and achieving a healthy community by jointly addressing economic,
+                    environmental, and social issues, whilst avoiding the over consumption of key natural resources.
+                </p>
+                <p>
+                    Sustainable development encourages us to conserve and enhance our resource base, by gradually
+                    changing the ways in which we develop and use technologies. Countries must be allowed to meet their
+                    basic needs of employment, food, energy, water and sanitation. If this is to be done in a
+                    sustainable manner, then there is a definite need for a sustainable level of population. Economic
+                    growth should be supported and developing nations should be allowed a growth of equal quality to the
+                    developed nations.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

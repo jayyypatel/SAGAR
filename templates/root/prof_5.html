@@ -1,0 +1,49 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Communication Training</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Communication Training</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                <p align="justify" class="style2">The contemporary era of globalization and competition highly demands
+                    for proficiency in English language. Everyone in the work place, irrespective of designation in the
+                    present age needs to have an urge to acquire adeptness in English so as to combat the challenges of
+                    better living. As such, Communication training should be such conceptualized so as to equip the
+                    learner with the skills that are increasingly sought after in the business/commercial world. But it
+                    is no easy tasking to impart and measure the proficiency in English Language skills. The simple
+                    reason behind is that there are clusters of skills comprising Communication skills in English, which
+                    are - reading, writing, speaking, listening etc. in varying degrees. Its learning has to be imbibed
+                    and internalized in such a way that they become second in nature. Also English language is very
+                    dynamic. So learning English communication is a continuous cycle of unlearning and learning. Thus
+                    the essentiality of English language is the need of an hour which in turn enhance the productivity
+                    and capabilities of a person.</p>
+                <p align="justify" class="style2">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

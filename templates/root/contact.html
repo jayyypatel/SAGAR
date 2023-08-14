@@ -1,0 +1,133 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+
+{% block title %}
+  - Conatct Us
+{% endblock title %}
+
+{% block meta_tags %}
+<meta name="keywords"
+    content="Sagar, Foundation, sagar foundation,Social Work, Social Contribution, Research, Data Analysis, Awareness,  Publication, Journal, Research Paper, Donation, Professional">
+<meta name="description"
+    content="SAGAR Foundation is a Government approved Registered Trust (Redg. No
+    E/21046/Ahmedabad)
+    working on a philosophy of “Social Service with Professional Approach”.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock meta_tags %}
+
+{% block body %}
+
+
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><span class="show-for-sr">Current: </span> Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-section module">
+    <div class="row">
+
+
+        {% for message in messages %}
+        <script type="text/javascript" language="JavaScript">
+            alert('{{message}}')    
+        </script>
+        {% endfor %}
+        <div class="map-wrapper module">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6623381916843!2d72.5168837149674!3d22.999440984964853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x868a3225200a6994!2zMjLCsDU5JzU4LjAiTiA3MsKwMzEnMDguNyJF!5e0!3m2!1sen!2sin!4v1656135110553!5m2!1sen!2sin"
+                height="300"></iframe>
+        </div>
+
+
+        <div class="content-wrapper">
+            <div class="medium-3 small-12 columns">
+                <div class="contact-info">
+                    <img src="{% static 'images/logo_withoutbg.png' %}" alt="Calling Girl" />
+                </div>
+                <div class="contact-info">
+                    <h4>SAGAR Foundation</h4>
+                    <p> M - 2, Shrinandnagar Part 4, Sonal Cinema Road, Vejalpur Ahmedabad 380051</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Office: </strong>+91 9898387329<br>
+                        <strong>Mail: </strong>info[at]sagarfoundation.org<br>
+                        
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <h4>Follow Us</h4>
+                    <div class="socialicons">
+                        <a href="https://www.facebook.com/sagarfoundation2016/"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-9 small-12 columns">
+                <h2>Please fill the form below to contact us</h2>
+
+                <div class="contact-form">
+                    <form action="{% url 'root:contact' %}" method="post">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Your Name*
+                                    {{form.name}}
+                                </label>
+                            </div>
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Your Email*
+                                    {{form.email}}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Your Contact No.*
+                                    {{form.m_number}}
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 small-12 columns">
+                                <label>
+                                    Your Message*
+                                    {{form.message}}
+                                </label>
+                                <input type="submit" class="button primary" value="Send your message" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,66 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Doctoral Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Doctoral Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    How to select topic for doctoral work?<br>
+                    How to select university for doctoral work?<br>
+                    Preparing for entrance examination<br>
+                    Writing research proposal<br>
+                    Presentation of research proposal<br>
+                    How to initiate research work?<br>
+                    Dealing with research guide<br>
+                </p>
+
+                <div align="justify"><span class="style2">
+                    <ul>
+                    
+                        <ul>
+                          <li class="style2">Proposal/Synopsis  Development</li>
+                          <li class="style2">Preparing  Literature Review (a) Selecting a topic (b) Locating and reading Literature  Review (c)&nbsp;Establishing specific purposes (d) &nbsp;Interpreting the  Literature (e) Synthesize the Literature (f) Write the first draft (g) Peer  Review and Revise</li>
+                          <li class="style2">Writing  formatting Chapters</li>
+                          <li class="style2">Research  Methodology for PhD Thesis/Dissertation</li>
+                          <li class="style2">Questionnaire  Design</li>
+                          <li class="style2">Qualitative  Research</li>
+                          <li class="style2">Statistical  Help</li>
+                          <li class="style2">Proof  reading Service</li>
+                          <li class="style2">Addressing  Comments from Committee</li>
+                        </ul>
+                    </ul></span></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

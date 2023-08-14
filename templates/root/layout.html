@@ -1,0 +1,361 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>SAGAR FOUNDATION 
+    {% block title %}
+        
+    {% endblock title %}
+        </title>
+
+    
+    {% block meta_tags %}
+        
+    {% endblock meta_tags %}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static '/images/favicon.png' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/animate.css' %}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/foundation.min.css' %}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lightbox.min.css' %}" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" media="all" />
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:400,700%7CRoboto+Slab:400%7CRoboto:900,700"
+        rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/revolution/css/settings.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/revolution/css/layers.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/revolution/css/navigation.css' %}">
+
+    <style>
+        @keyframes slidy {
+            0% {
+                left: 0%;
+            }
+
+            20% {
+                left: 0%;
+            }
+
+            25% {
+                left: -100%;
+            }
+
+            45% {
+                left: -100%;
+            }
+
+            50% {
+                left: -200%;
+            }
+
+            70% {
+                left: -200%;
+            }
+
+            75% {
+                left: -300%;
+            }
+
+            95% {
+                left: -300%;
+            }
+
+            100% {
+                left: -400%;
+            }
+        }
+
+        body {
+            margin: 0;
+        }
+
+        div#slider {
+            overflow: hidden;
+        }
+
+        div#slider figure img {
+            width: 20%;
+            float: left;
+        }
+
+        div#slider figure {
+            position: relative;
+            width: 500%;
+
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 30s slidy infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div id="object"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-container">
+        <div class="topBar">
+            <div class="row">
+                <div class="large-6 medium-6 small-12 columns left-side">
+                    <p><strong>Questions?</strong> <i class="fa fa-phone"></i>+91 9898387329</p>
+                </div>
+                <div class="large-6 medium-6 small-12 columns">
+                    <ul class="menu text-right">
+                        <li> <a href="mailto:info@sagarfoundation.org">info[at]sagarfoundation.org</a>
+                        </li>
+
+                        <li class="first-social social"><a href="https://www.facebook.com/sagarfoundation2016/"><i
+                                    class="fa fa-facebook"></i></a></li>
+                        <li class="social"><a href="https://www.linkedin.com/company/social-action-group-for-awareness-and-research-sagar-foundation-/"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li class="social"><a href="#"><i class="fa fa-google"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--header-->
+
+        <div class="header sticky" id="navbar_top">
+            <div class="row">
+                <div class="medium-4 small-12 columns">
+                    <div class="logo">
+                        <a href="{% url 'root:index' %}">
+                            <img src="{% static 'images/logo_edit_sagar.png' %} " alt="Sagar Foundation" />
+                        </a>
+                    </div>
+                </div>
+                <div class="medium-8 small-12 columns nav-wrap">
+
+                    <div class="top-bar">
+                        <div class="top-bar-title">
+                            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+                                <a data-toggle><span class="menu-icon dark float-left"></span></a>
+                            </span>
+                        </div>
+                        <nav id="responsive-menu">
+                            <ul class="menu vertical medium-horizontal float-right"
+                                data-responsive-menu="accordion medium-dropdown">
+                                <li class="single-sub parent-nav"><a href="{% url 'root:index' %}">Home</a>
+
+                                </li>
+                                <li class="single-sub parent-nav"><a href="{% url 'root:aboutus' %}">About Us</a>
+
+                                </li>
+                                <li class="single-sub parent-nav"><a href="{% url 'root:activities' %}">Activities</a>
+                                    <ul class="child-nav menu vertical">
+                                        <li><a href="{% url 'root:activities' %}">Activities</a></li>
+                                        <li><a href="{% url 'root:announcement' %}">Announcement</a></li>
+                                    </ul>
+                                </li>
+                                <li class="single-sub parent-nav">
+                                    <a href="{% url 'root:join_us' %}">Join Us</a>
+                                </li>
+                                <li class="single-sub parent-nav"><a
+                                        href="{% url 'root:publications' %}">Publications</a>
+                                </li>
+                                <li class="single-sub parent-nav"><a href="{% url 'root:donate_us' %}">Donate Us</a>
+                                </li>
+                                <li><a href="{% url 'root:contact' %}">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        {% block body %}
+
+        {% endblock %}
+
+
+        {% block section_main_banner %}
+
+        {% endblock section_main_banner %}
+
+
+        {% block section_gallery %}
+
+        {% endblock section_gallery %}
+
+
+        {% block announcement %}
+
+        {% endblock announcement %}
+
+
+
+
+
+
+        <div class="call-to-action">
+            <div class="row">
+                <div class="medium-10 small-12 columns">
+                    <h2><i class="fa fa-phone" aria-hidden="true"></i> If you Have Any Questions Contact Us
+
+                    </h2>
+                </div>
+                <div class="medium-2 small-12 columns">
+                    <a href="{% url 'root:contact' %}" class="button secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <div class="footer">
+            <div class="footerTop">
+                <div class="row">
+                    <div class="large-3 medium-6 small-12 columns footer-widget">
+                        <h2>About Us</h2>
+                        <div class="tx-div"></div>
+                        <p>SAGAR Foundation is a Government approved Registered Trust (Redg. No E/21046/Ahmedabad)
+                            working on a philosophy of <b style="color: white;">“Social Service with Professional
+                                Approach”</b>. With the vision to build
+                            self-sustained social service organization working towards bridging the gap between social
+                            need and
+                            social action through research, trust is working towards analysing social need in scientific
+                            manners,
+                            to identify them and support the society through amalgamation of professional services with
+                            social
+                            action.</p>
+                    </div>
+                    <div class="large-3 medium-6 small-12 columns footer-widget quick-links">
+                        <h2>Quick Links</h2>
+                        <div class="tx-div"></div>
+                        <ul class="menu vertical">
+                            <li><a href="{% url 'root:aboutus' %}">About Us</a></li>
+                            <li><a href="{% url 'root:activities' %}">Activities</a></li>
+                            <li><a href="{% url 'root:join_us' %}">Join Us</a></li>
+                            <li><a href="{% url 'root:publications' %}">Publications</a></li>
+                            <li><a href="{% url 'root:contact' %}">Contact Us</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="large-3 medium-6 small-12 columns footer-widget">
+                        <h2>Feel free to contact us.</h2>
+                        <div class="tx-div"></div>
+                        <ul class="vertical office-hours">
+                            <p><i class="fa fa-phone"></i> +91 9898387329</p>
+                            <p><i class="fa fa-envelope-o"></i> info[at]sagarfoundation.org</p>
+                            <p><i class="fa fa-globe"></i> www.sagarfoundation.org</p>
+
+                        </ul>
+                    </div>
+                    <div class="large-3 medium-6 small-12 columns footer-widget">
+                        <div class="textwidget">
+                            <ul class="address">
+                                <li>
+                                    <i class="fa fa-home"></i><br><br><br>
+                                    <h4>Address:</h4>
+
+                                    <p> M - 2, Shrinandnagar Part 4, Sonal Cinema Road, Vejalpur Ahmedabad 380051</p>
+
+                                </li>
+                            </ul>
+                            <br>
+                            <hr>
+                            <div class="socialicons">
+                                Social:
+                                <a href="https://www.facebook.com/sagarfoundation2016/"><i
+                                        class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="footerbottom">
+                <div class="row">
+                    <div class="medium-6 small-12 columns">
+                        <div class="copyrightinfo">2016 &copy; <a href="#">Sagar Foundation</a> All Rights
+                            Reserved. Developed By <a href="mailto:unicornwebworld@gmail.com"> Unicorn Projects</a>
+                        </div>
+                    </div>
+                    <div class="medium-6 small-12 columns hide-for-small-only">
+                        <div class="pull-right">
+                            <ul class="menu">
+                                <li><a href="{% url 'root:index' %}">Home</a></li>
+                                <li><a href="{% url 'root:aboutus' %}">About</a></li>
+                                <li><a href="{% url 'root:join_us' %}">Join Us</a></li>
+
+                                <li><a href="{% url 'root:contact' %}">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="#top" id="top" class="animated fadeInUp start-anim"><i class="fa fa-angle-up"></i></a>
+
+    <script data-cfasync="false" src="{% static 'js/email-decode.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript" src="{% static 'js/jquery.js' %}"></script>
+
+    <script type="05eabe118b2c96c2039921bf-text/javascript" src="{% static 'js/foundation.min.js' %}"></script>
+
+    <script type="05eabe118b2c96c2039921bf-text/javascript" src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+    <script src="{% static 'js/webful.js' %}" type="05eabe118b2c96c2039921bf-text/javascript"></script>
+
+    <script src="{% static 'js/lightbox.min.js' %}" type="05eabe118b2c96c2039921bf-text/javascript"></script>
+
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.migration.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+    <script type="05eabe118b2c96c2039921bf-text/javascript"
+        src="{% static 'lib/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+    <script src="{% static 'js/rocket-loader.min.js' %}" data-cf-settings="05eabe118b2c96c2039921bf-|49"
+        defer=""></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Women Empowerment</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Women Empowerment</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,li{
+        font-size:medium;
+        color:black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Women Empowerment is a burning issue all over the world. The topic of women empowerment and women
+                    equality with men is a universal issue. Women Empowerment refers to the creation of an environment
+                    for women where they can make decisions of their own for their personal benefits as well as for the
+                    society. Women empowerment refers to increasing and improving the social, economic, political and
+                    legal strength of the women, to ensure equal-right to women, and to make them confident enough to
+                    claim their rights, such as;
+                </p>
+                <span class="style2">
+                    <ol>
+                    
+                      <ul>
+                        <li class="style2">live  their life with a sense of self-worth, respect and dignity</li>
+                        <li class="style2">have  complete control of their life, both within and outside of their home and  workplace</li>
+                        <li class="style2">Freedom  to make their own choices and decisions</li>
+                        <li class="style2">Equal  rights to participate in social, religious and public life</li>
+                        <li class="style2">Equal  social status</li>
+                        <li class="style2">Equal  rights for social and economic justice</li>
+                        <li class="style2">Freedom  to make financial and economic choices</li>
+                        <li class="style2">Equality  of opportunities for education</li>
+                        <li class="style2">Equality  of employment opportunity without any gender discrimination</li>
+                        <li class="style2">Safe  and comfortable working environment </li>
+                        <li class="style2">Rights to get their voices heard.</li>
+                      </ul>
+                  </ol></span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

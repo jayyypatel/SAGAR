@@ -1,0 +1,110 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+{% block title %}
+  - Activities
+{% endblock title %}
+  
+{% block meta_tags %}
+<meta name="keywords"
+    content="Sagar, Foundation, sagar foundation,Social Work, Social Contribution, Research, Data Analysis, Awareness,  Publication, Journal, Research Paper, Donation, Professional">
+<meta name="description"
+    content="SAGAR Foundation is a Government approved Registered Trust (Redg. No
+    E/21046/Ahmedabad)
+    working on a philosophy of “Social Service with Professional Approach”.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock meta_tags %}
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Activities</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><span class="show-for-sr">Current: </span> Activities</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    li,a{
+        color: black;
+    }
+</style>
+
+<div class="content-section module blog-page">
+    <div class="row">
+        <table width="636" border="2" align="center" style="border: 2px solid black;">
+            <tbody>
+                <tr style="border: 2px solid black;" >
+                    <td width="313">
+                        <div align="center"><span style="color:black;"><b>Social Contribution Activities</b></span></div>
+                    </td>
+                    <td width="305">
+                        <div align="center"><span style="color:black;"><b>Professional Activities</b></span></div>
+                    </td>
+                </tr>
+                <tr style="border: 2px solid black;">
+                    <td> 
+                        <ul style="color: black;"> 
+                            <li><a href="{% url 'root:social_1' %}">Empowerment of Persons with Disabilities</a></li> 
+                            <li><a href="{% url 'root:social_2' %}">Women Empowerment</a></li> 
+                            <li><a href="{% url 'root:social_3' %}">Self Help Group</a></li> 
+                            <li><a href="{% url 'root:social_4' %}">Self Employment Training</a></li> 
+                            <li><a href="{% url 'root:social_5' %}">Education for All</a></li> 
+                            <li><a href="{% url 'root:social_6' %}">AIDS Awareness</a></li> 
+                            <li><a href="{% url 'root:social_7' %}">Legal Aid</a></li> 
+                            <li><a href="{% url 'root:social_8' %}">Rural Development Program</a></li> 
+                            <li> <a href="#"> Educational Development</a></li> 
+                            <li><a href="{% url 'root:social_9' %}">Computer literacy and awareness</a></li> 
+                            <li><a href="{% url 'root:social_10' %}">Safe Drinking Water for All</a></li> 
+                            <li><a href="{% url 'root:social_11' %}">Non Conventional Energy</a></li> 
+                            <li><a href="{% url 'root:social_12' %}">Children Rights and Child Protection</a></li> 
+                            <li><a href="{% url 'root:social_13' %}">Micro Finance</a></li> 
+                            <li><a href="{% url 'root:social_14' %}">Environmental Protection and Sustainable Development</a></li> 
+                            <li><a href="#"> Green Energy </a></li> 
+                            <li><a href="#"> Water and Sanitation </a></li> 
+                        </ul> 
+                    </td> 
+                    <td> 
+                        <ul style="color: black;"> 
+                            <li><a href="{% url 'root:prof_1' %}">Research Counseling</a></li> 
+                            <li><a href="#"> Data Entry</a></li> 
+                            <li><a href="{% url 'root:prof_2' %}">Data Analysis</a></li> 
+                            <li><a href="{% url 'root:prof_4' %}">Research Methods</a></li> 
+                            <li><a href="#"> Editorial services</a></li> 
+                            <li><a href="{% url 'root:prof_5' %}">Communication Training</a></li> 
+                            <li><a href="{% url 'root:prof_6' %}">Corporate Communication</a></li> 
+                            <li><a href="{% url 'root:prof_7' %}">Content development</a></li> 
+                            <li><a href="{% url 'root:prof_8' %}">Financial advisory</a></li> 
+                            <li><a href="{% url 'root:prof_9' %}">Market Research</a></li> 
+                            <li><a href="#"> Writing research </a></li> 
+                            <li><a href="{% url 'root:prof_10' %}">Doctoral Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_17' %}">Web designing</a></li> 
+                            <li><a href="#"> Documentation </a></li> 
+                            <li><a href="{% url 'root:prof_12' %}">Career Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_13' %}">Personal Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_14' %}">Psychological Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_15' %}">Corporate Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_16' %}">Family Counseling</a></li> 
+                            <li><a href="{% url 'root:prof_11' %}">Research publication</a></li> 
+                        </ul> 
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock body %}

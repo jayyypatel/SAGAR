@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+</head>
+<style>
+    .outer-border {
+        width:730px;
+        height: max-content;
+        padding: 5px;
+        text-align: center;
+        border: 10px solid #174873;
+        
+    }
+
+    .inner-dotted-border {
+        width: 700px;
+        height: 600px;
+        padding: 20px;
+        text-align: center;
+        border: 5px solid #000000;
+        border-style: dotted;
+    }
+
+    .certification {
+        font-size: 50px;
+        font-weight: bold;
+        color: #663ab7;
+    }
+
+    .certify {
+        font-size: 25px;
+    }
+
+    .name {
+        font-size: 30px;
+        color: green;
+    }
+
+    .fs-30 {
+        font-size: 30px;
+    }
+
+    .fs-20 {
+        font-size: 20px;
+    }
+
+    @page {
+        size: 9in 8in;
+    }
+
+    .pagebreak {
+        display: block;
+        clear: both;
+        page-break-after: always;
+    }
+</style>
+
+<body>
+    <center>
+    <div class="outer-border pagebreak">
+        <div class="inner-dotted-border">
+            <h1>SAGAR Foundation</h1><hr color="black">
+            <span class="certification">Certificate of Membership</span>
+            <br><br><br>
+            <span class="certify"><i>This is to certify that</i></span>
+            <br><br>
+            <span class="name"><b>{{name}}</b></span><br /><br />
+            <span class="certify"><i>has successfully completed Membership Registeration</i></span> <br /><br />
+            <br /><br />
+            <span class="certify"><i>dated</i></span><br>
+
+            <span class="fs-30">{{date}}</span>
+
+        </div>
+    </div>
+</center>
+</body>
+
+</html>

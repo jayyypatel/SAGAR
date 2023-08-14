@@ -1,0 +1,73 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Psychological Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Psychological Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Counseling psychology is a general practice and health service provider specialty in professional
+                    psychology. It focuses on how people function both personally and in their relationships at all
+                    ages. Counseling psychology addresses the emotional, social, work, school and physical health
+                    concerns people may have at different stages in their lives, focusing on typical life stresses and
+                    more severe issues with which people may struggle as individuals and as a part of families, groups
+                    and organizations. Counseling psychologists help people with physical, emotional and mental health
+                    issues improve their sense of well‐being, alleviate feelings of distress and resolve crises. They
+                    also provide assessment, diagnosis, and treatment of more severe psychological symptoms.
+                </p>
+                <p>
+                    The problems addressed by counseling psychology are addressed from developmental (lifespan),
+                    environmental and cultural perspectives. They include, but are not limited to:
+                </p>
+                <div align="justify"><span class="style2">
+                    <ul>
+                    
+                        <ul>
+                          <li class="style2">School  and career/work adjustment concerns.</li>
+                          <li class="style2">Making  decisions about career and work, and dealing with school‐work‐retirement  transitions.</li>
+                          <li class="style2">Relationship  difficulties‐including marital and family difficulties.</li>
+                          <li class="style2">Learning  and skill deficits.</li>
+                          <li class="style2">Stress  management and coping with negative life events.</li>
+                          <li class="style2">Organizational  problems.</li>
+                          <li class="style2">Dealing  with and adjusting to physical disabilities, disease or injury.</li>
+                          <li class="style2">Personal/social  adjustment.</li>
+                          <li class="style2">The  development of one’s identity.</li>
+                          <li class="style2">Persistent  difficulties with relating to other people in general.</li>
+                          <li class="style2">Mental  disorders.</li>
+                        </ul>
+                    </ul></span></div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

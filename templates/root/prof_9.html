@@ -1,0 +1,69 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Market Research</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Market Research</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li,span {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Knowledge is more critical than ever in today's economy. Market research services can give your
+                    organization and edge over your competition. Whether you need to keep abreast of current markets or
+                    entering new ones, market research provides much needed intelligence on real-time conditions,
+                    challenges, and issues.
+                </p>
+                <p>
+                    Foundation proposes to provide services such as customized surveys, in-depth market research
+                    reports, and competitive analysis through a team of highly qualified professional with desired
+                    skills set, and years of experience. Key market research services of the foundation include;
+                </p>
+                <div align="justify">
+                    <ul>
+                      <li class="style2">SWOT Analysis</li>
+                      <li class="style2">PEST (Political, Economic, Social, and  Technological) Analysis</li>
+                      <li class="style2">Porters Five </li>
+                      <li class="style2">&nbsp;Market Sizing  Study</li>
+                      <li class="style2">Sector Research</li>
+                      <li class="style2">Country analysis and profiling</li>
+                      <li class="style2">Business and Investment Environment Assessment</li>
+                      <li class="style2">Industry Analysis and Profiling</li>
+                      <li class="style2">Country Risk Assessment</li>
+                      <li class="style2">Sectional Highlights</li>
+                      <li class="style2">Competition </li>
+                    </ul>
+                    <span class="style2">Target Screening             </span>
+                   </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

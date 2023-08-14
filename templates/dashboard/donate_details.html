@@ -1,0 +1,114 @@
+{% extends 'dashboard/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+    <!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Donator Profile</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="{% url 'dashboard:index' %}">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="{% url 'dashboard:donate_us_request' %}">Donate Us Request</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Donator Profile</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							
+							<!-- BEGIN PROFILE CONTENT -->
+							<div class="profile-content">
+								<div class="row">
+									<div class="card">
+										<div class="card-topline-aqua">
+											<header></header>
+										</div>
+										<div class="white-box">
+											
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div class="tab-pane active fontawesome-demo" id="tab1">
+													<div id="biography">
+														<div class="row">
+															<div class="col-md-3 col-6 b-r"> <strong>Full Name</strong>
+																<br>
+																<p class="text-muted">{{donate.name}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>PAN Card Number</strong>
+																<br>
+																<p class="text-muted">{{donate.pan_no}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Email</strong>
+																<br>
+																<p class="text-muted">{{ donate.email }}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Certificate Number</strong>
+																<br>
+																<p class="text-muted">{{ donate.certificate_no }}</p>
+															</div>
+															
+															
+														</div>
+														<hr>
+														<div class="row">
+															<div class="col-md-3 col-6 b-r"> <strong>Contact Number</strong>
+																<br>
+																<p class="text-muted">{{donate.contact}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Entered Amount</strong>
+																<br>
+																<p class="text-muted">{{donate.entered_amount}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Donation Date</strong>
+																<br>
+																<p class="text-muted">{{ donate.date_ofdonation }}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Donation Mode</strong>
+																<br>
+																<p class="text-muted">{{ donate.donation_mode }}</p>
+															</div>
+															
+														</div>
+														<hr>
+														
+														
+														<h4 class="font-bold">Transaction Details</h4>
+														
+														<ul>
+															<li>{{donate.transaction_detail}}</li>
+														</ul>
+														
+														<br>
+														<h4 class="font-bold">Address
+														</h4>
+														
+														<ul>
+															<li>{{donate.address}} </li>
+															
+														</ul>
+														<br>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END PROFILE CONTENT -->
+						</div>
+					</div>
+				</div>
+				<!-- end page content -->
+				
+			</div>
+			<!-- end page container -->
+{% endblock body %}

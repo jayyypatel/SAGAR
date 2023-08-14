@@ -1,0 +1,93 @@
+{% load static %}
+
+
+<!-- <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"> -->
+<div id="slider" style="height: 350px;">
+    <figure style="height: 350px;">
+        <img src="{% static 'images/social_main.png' %}" style="height: 350px;" alt>
+        <img src="{% static 'images/home-bg.jpg' %}" style="height: 350px;" alt>
+        <!-- update  -->
+        <img src="{% static 'images/pp2.jpg' %}" style="height: 350px;" alt>
+        <!-- update  -->
+        <img src="{% static 'images/social_main.png' %}" style="height: 350px;" alt>
+        <img src="{% static 'images/home-bg.jpg' %}" style="height: 350px;" alt>
+        <!-- <img src="{% static 'images/social_main.png' %}" style="height: 350px;" alt> -->
+    </figure>
+</div>
+
+<div class="information-boxes module">
+    <div class="courses-info medium-4 small-12 columns" style="padding-top: 65px;padding-bottom: 65px;">
+        <div class="">
+
+            <h1 style="color:white"><i class="fa fa-users" aria-hidden="true"
+                    style="font-size:60px ;color: white;margin-bottom: 20px;border-radius: 50%;border:3px solid;height: 100px;width: 120px;line-height: 76px;padding-top: 9px;"></i>
+                <br> <a href="{% url 'root:social_contribution' %}" style="color:white"> Social <br> Contribution</a>
+            </h1>
+
+            <div class="clearfix"></div>
+            <a href="{% url 'root:social_contribution' %}" class="primary button bordered-light"
+                style="margin-top: 10px;">Find out More!</a>
+        </div>
+    </div>
+    <div class="faculty-info medium-4 small-12 columns" style="padding-top: 65px;padding-bottom: 65px;">
+        <div class="">
+
+            <h1 style="color:white"><i class="fa fa-bar-chart" aria-hidden="true"
+                    style="font-size:60px ;color: white;margin-bottom: 20px;border-radius: 50%;border:3px solid;height: 100px;width: 120px;line-height: 76px;padding-top: 9px;"></i>
+                <br> <a href="{% url 'root:publications' %}" style="color:white"> Research &amp;<br> Publications</a>
+            </h1>
+
+            <div class="clearfix"></div>
+            <a href="{% url 'root:publications' %}" class="primary button bordered-light" style="margin-top: 10px;">View
+                More!</a>
+        </div>
+    </div>
+    <div class="newadmission-info medium-4 small-12 columns" style="padding-top: 65px;padding-bottom: 65px;">
+        <div class="">
+
+            <h1 style="color:white"><i class="fa fa-life-ring" aria-hidden="true"
+                    style="font-size:60px ;color: white;margin-bottom: 20px;border-radius: 50%;border:3px solid;height: 100px;width: 120px;line-height: 76px;padding-top: 9px;"></i>
+                <br> <a href="{% url 'root:professional_activities' %}" style="color:white"> Projects &amp;<br>
+                    Consultancy</a>
+            </h1>
+
+            <div class="clearfix"></div>
+            <a href="{% url 'root:professional_activities' %}" class="primary button bordered-light"
+                style="margin-top: 10px;">Know More!</a>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+
+
+
+<!-- hello this is comment  -->
+<div class="welcome-message module" style="padding-top: 50px;">
+    <div class="row">
+        <div class="medium-6 small-12 columns">
+            <img src="{% static 'images/logo_withoutbg.png' %}" alt="Education Background" />
+        </div>
+        <style>b{
+            color: black;
+        }</style>
+        <div class="medium-6 small-12 columns">
+            <br>
+            <h2>Welcome to <span>Sagar Foundation</span></h2>
+            <h3>(Origin of life)</h3>
+            <br>
+            <p> <b> Welcome to Social Action Group for Awareness and Research (SAGAR) Foundation.</b><br>
+                SAGAR Foundation is a Government approved Registered Trust (Redg. No E/21046/Ahmedabad)
+                working on a philosophy of “Social Service with Professional Approach”.
+               <br><b>Vision:</b> 
+                To build self-sustained social service organization working towards bridging the gap between social
+                need and social action through research.
+               <br> <b> Mission:</b>
+                To analyze social need in scientific manners, to identify them and support the society through
+                amalgamation of professional services with social action.</p>
+            <br>
+            <a href="{% url 'root:aboutus' %}" class="primary bordered-dark button">Know More!</a>
+        </div>
+    </div>
+</div>

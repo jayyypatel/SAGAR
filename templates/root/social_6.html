@@ -1,0 +1,89 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>AIDS Awareness</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> AIDS Awareness</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li,
+    span {
+        font-size: medium;
+        color: black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Since the beginning of the epidemic, almost 71 million people have been infected with the HIV virus
+                    and about 34 million people have died of HIV. Globally, 36.9 million [34.3–41.4 million] people were
+                    living with HIV at the end of 2014. An estimated 0.8% [0.7-0.9%] of adults aged 15–49 years
+                    worldwide are living with HIV, although the burden of the epidemic continues to vary considerably
+                    between countries and regions. Sub-Saharan Africa remains most severely affected, with nearly 1 in
+                    every 20 adults (4.8%) living with HIV and accounting for nearly 70% of the people living with HIV
+                    worldwide.
+                    <br>
+                    -World Health Organization
+                </p>
+                <p>
+                    The number of people living with HIV/AIDS in India is an alarming 2.4 million, according to a 2008
+                    government-backed estimate. SAGAR Foundation's AIDS Awareness Program involves a multi-pronged
+                    sequence of events and interventions including educational, social, and medical efforts to contain
+                    the spread of HIV/AIDS, especially in rural areas and within its pediatric group. The program focus
+                    is on giving proper care and treatment to infected people, and above all, ensuring a healthy
+                    atmosphere in the society to end social stigma and ensuing social marginalization. This project
+                    benefits from the Foundation's already-established rural infrastructure of the Action for Rural
+                    Rejuvenation program and its fleet of mobile health clinics and healthcare professionals. Under its
+                    HIV/AIDS Awareness Programme, Foundation proposed to include:
+                </p>
+
+                <span class="style2">
+                    <ol>
+
+                        <ul>
+                            <li class="style2">Introduction to HIV and AIDS</li>
+                            <li class="style2">Aims of HIV training</li>
+                            <li class="style2">Needs and objectives</li>
+                            <li class="style2">Where did HIV/AIDS come from?</li>
+                            <li class="style2">World Statistics</li>
+                            <li class="style2">National Statistics</li>
+                            <li class="style2">What are HIV/AIDS</li>
+                            <li class="style2">Symptoms of HIV Infection</li>
+                            <li class="style2">Stages and symptoms of HIV Infection</li>
+                            <li class="style2">Factors influencing disease progression</li>
+                            <li class="style2">Main types of HIV transmission in South Africa</li>
+                            <li class="style2">Ways of preventing HIV transmission</li>
+                            <li class="style2">Male and Female condom</li>
+                            <li class="style2">Dynamics of HIV testing</li>
+                            <li class="style2">Legal and ethical issues</li>
+                            <li class="style2">Positive Living</li>
+                            <li class="style2">HIV medicines</li>
+                        </ul>
+                    </ol>
+                </span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

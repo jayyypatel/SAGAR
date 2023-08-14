@@ -1,0 +1,78 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Computer literacy and awareness</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Computer literacy and awareness</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li,
+    span {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Computer literacy is defined as the knowledge and ability to use computers and related technology
+                    efficiently, with a range of skills covering levels from elementary use to programming and advanced
+                    problem solving. Computer literacy can also be referred at comfort level someone has with using
+                    computer programs and other applications that are associated with computers. Knowledge as to how
+                    computers work and operate is another valuable component of computer literacy. Generally, literate
+                    connotes one who can read text in his or her native language, looking up new words if necessary.
+                    Likewise, an experienced computer person can manage with a range of basic tasks encountered upon
+                    using a personal computer. Since the usage of computers nowadays touches upon every facet of life,
+                    it is only natural that children with learning disabilities can bridge whatever gap that might deter
+                    them from making full usage of them.
+                </p>
+                <p>
+                    The Digital Saksharta Abhiyan (DISHA) or National Digital Literacy Mission (NDLM) Scheme has been
+                    formulated to impart IT training to 52.5 lakh persons, including Anganwadi and ASHA workers and
+                    authorized ration dealers in all the States/UTs across the country so that the non-IT literate
+                    citizens are trained to become IT literate so as to enable them to actively and effectively
+                    participate in the democratic and developmental process and also enhance their livelihood.
+                </p>
+                <p>
+                    The computer literacy program of the foundation aims at
+                </p>
+
+                <div align="justify"><span class="style2">
+                        <ul>
+
+                            <ul>
+                                <li class="style2">Provide students and community members with increased access to
+                                    computers and information technology.</li>
+                                <li class="style2">Facilitate access to digital information while enabling effective
+                                    analysis of the credibility and reliability of online sources.</li>
+                                <li class="style2">Teach skills necessary to create new content for school, work, or
+                                    personal use through the Internet, Microsoft Office, and other computer
+                                    applications.</li>
+                            </ul>
+                        </ul>
+                    </span></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

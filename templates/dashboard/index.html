@@ -1,0 +1,161 @@
+{% extends 'dashboard/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<!-- start page content -->
+<div class="page-content-wrapper">
+	<div class="page-content">
+		<div class="page-bar">
+			<div class="page-title-breadcrumb">
+				<div class=" pull-left">
+					<div class="page-title">Dashboard</div>
+				</div>
+				<ol class="breadcrumb page-breadcrumb pull-right">
+					<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+							href="{% url 'dashboard:index' %}">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+					</li>
+					<li class="active">Dashboard</li>
+				</ol>
+			</div>
+		</div>
+		<!-- start widget -->
+		<div class="state-overview">
+			<div class="row">
+				<div class="col-xl-3 col-md-6 col-12">
+					<a href=" {% url 'dashboard:approved_membership' %} ">
+						<div class="info-box bg-b-green">
+							<span class="info-box-icon push-bottom" style="color:white"><i
+									data-feather="users"></i></span>
+							<div class="info-box-content">
+								<span class="info-box-text" style="color:white">Total Members</span>
+								<span class="info-box-number" style="color:white">{{join_members}}</span>
+								<div class="progress">
+									<div class="progress-bar" style="width: 45%"></div>
+								</div>
+								<span class="progress-description">
+									<br>
+								</span>
+							</div>
+							<!-- /.info-box-content -->
+						</div>
+					</a>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-xl-3 col-md-6 col-12">
+					<a href=" {% url 'dashboard:publications' %} ">
+					<div class="info-box bg-b-yellow">
+						<span class="info-box-icon push-bottom" style="color:white"><i data-feather="book"></i></span>
+						<div class="info-box-content">
+							<span class="info-box-text" style="color:white">Total Publications</span>
+							<span class="info-box-number" style="color:white">{{pub_count}}</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 40%"></div>
+							</div>
+							<span class="progress-description">
+								<br>
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					</a>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-xl-3 col-md-6 col-12">
+					<a href=" {% url 'dashboard:contact_us_request' %} ">
+					<div class="info-box bg-b-blue">
+						<span class="info-box-icon push-bottom" style="color:white"><i data-feather="user"></i></span>
+						<div class="info-box-content">
+							<span class="info-box-text" style="color:white">Total Contacts</span>
+							<span class="info-box-number" style="color:white">{{con_count}}</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 85%"></div>
+							</div>
+							<span class="progress-description">
+								<br>
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+					</a>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+				<div class="col-xl-3 col-md-6 col-12">
+					<a href="{% url 'dashboard:donate_approved' %}">
+					<div class="info-box bg-b-pink">
+						<span class="info-box-icon push-bottom" style="color:white"><i class="fa fa-rupee"></i></span>
+						<div class="info-box-content">
+							<span class="info-box-text" style="color:white">Total Donation</span>
+							<span class="info-box-number" style="color:white"><i class="fa fa-rupee"></i> {{total_damount}}</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 50%"></div>
+							</div>
+							<span class="progress-description" style="color:white">
+								{{d_count}} Donors
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+				</a>
+					<!-- /.info-box -->
+				</div>
+				<!-- /.col -->
+			</div>
+
+			<div class="row">
+
+				<div class="col-xl-3 col-md-6 col-12" style="margin-left: 315px;">
+					<a href=" {% url 'dashboard:join_us_request' %} ">
+					<div class="info-box bg-b-pink">
+						<span class="info-box-icon push-bottom" style="color:white"><i class="fa fa-child"></i></span>
+						<div class="info-box-content">
+							<span class="info-box-text" style="color:white">Join Us Requests</span>
+							<span class="info-box-number" style="color:white">{{join_request_count}}</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 45%"></div>
+							</div>
+							<span class="progress-description">
+								<br>
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+				</a>
+					<!-- /.info-box -->
+				</div>
+				<div class="col-xl-3 col-md-6 col-12">
+					<a href="{% url 'dashboard:donate_us_request' %}">
+					<div class="info-box bg-b-green">
+						<span class="info-box-icon push-bottom" style="color:white"><i class="fa fa-rupee"></i></span>
+						<div class="info-box-content">
+							<span class="info-box-text" style="color:white">Donate Us Requests</span>
+							<span class="info-box-number" style="color:white"> {{donateus_count}}</span>
+							<div class="progress">
+								<div class="progress-bar" style="width: 50%"></div>
+							</div>
+							<span class="progress-description">
+								<br>
+							</span>
+						</div>
+						<!-- /.info-box-content -->
+					</div>
+				</a>
+					<!-- /.info-box -->
+				</div>
+
+			</div>
+
+		</div>
+		<!-- end widget -->
+
+
+
+
+
+	</div>
+</div>
+<!-- end page content -->
+{% endblock body %}

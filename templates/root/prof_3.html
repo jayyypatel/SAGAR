@@ -1,0 +1,44 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Application of computer for research</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Application of computer for research</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                <p align="justify" class="style2">&nbsp;</p>
+                <p align="justify" class="style2">Searching literature online<br>
+                    Use of Online journals<br>
+                    E-journals<br>
+                    Online database<br>
+                    Application of Excel in Research<br>
+                    Application of SPSS in Research</p>
+                <p align="justify" class="style2">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

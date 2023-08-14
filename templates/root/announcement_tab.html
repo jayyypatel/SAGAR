@@ -1,0 +1,43 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block title %}
+- Announcement
+{% endblock title %}
+
+{% block meta_tags %}
+<meta name="keywords"
+    content="Sagar, Foundation, sagar foundation,Social Work, Social Contribution, Research, Data Analysis, Awareness,  Publication, Journal, Research Paper, Donation, Professional">
+<meta name="description"
+    content="SAGAR Foundation is a Government approved Registered Trust (Redg. No
+    E/21046/Ahmedabad)
+    working on a philosophy of “Social Service with Professional Approach”.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock meta_tags %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Announcements</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+
+                <li><span class="show-for-sr">Current: </span> Announcement</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content-section module">
+    <div class="row">
+        <div class="content-wrapper">
+            {% include 'root/announcement.html' %}
+        </div>
+    </div>
+</div>
+{% endblock body %}

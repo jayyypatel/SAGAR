@@ -1,0 +1,79 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Legal Aid</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Legal Aid</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li,
+    span {
+        font-size: medium;
+        color: black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Legal Aid implies giving free legal services to the poor and needy who cannot afford the services of
+                    a lawyer for the conduct of a case or a legal proceeding in any court, tribunal or before an
+                    authority.
+                </p>
+                <p>
+                    Article 39A of the Constitution of India provides that State shall secure that the operation of the
+                    legal system promotes justice on a basis of equal opportunity, and shall in particular, provide free
+                    legal aid, by suitable legislation or schemes or in any other way, to ensure that opportunities for
+                    securing justice are not denied to any citizen by reason of economic or other disability. Articles
+                    14 and 22(1) also make it obligatory for the State to ensure equality before law and a legal system
+                    which promotes justice on a basis of equal opportunity to all. Legal aid strives to ensure that
+                    constitutional pledge is fulfilled in its letter and spirit and equal justice is made available to
+                    the poor, downtrodden and weaker sections of the society.
+                </p>
+                <p>
+                    Foundation proposed to conduct following activities under legal aid center with the help of our
+                    members from legal fraternity.
+                </p>
+
+                <div align="justify"><span class="style2">
+                        <ul>
+
+                            <ul>
+                                <li class="style2">Client counseling for legal issues;</li>
+                                <li class="style2">Legal awareness camps in rural as well as urban areas</li>
+                                <li class="style2">Preparation and publication of legal-aid literature</li>
+                                <li class="style2">Arranging workshops for various functionaries of the legal systems
+                                    such as lawyers, students, Non-Governmental organizations and Government agencies
+                                </li>
+                                <li class="style2">Carrying out field surveys</li>
+                                <li class="style2">Conducting Adult Literacy Classes for the non-teaching staff of the
+                                    University;</li>
+                                <li class="style2">Conducting street-plays on socio-legal issues.</li>
+                            </ul>
+                        </ul>
+                    </span></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

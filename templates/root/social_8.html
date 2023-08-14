@@ -1,0 +1,90 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Rural Development Program</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Rural Development Program</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li,
+    span {
+        font-size: medium;
+        color: black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Rural development implies both the economic betterment of people as well as greater social
+                    transformation. In order to provide the rural people with better prospects for economic development,
+                    increased participation of people in the rural development programmes, decentralization of planning,
+                    better enforcement of land reforms and greater access to credit are needed.
+                </p>
+                <p>
+                    The general objective of the foundation is the sustained improvement of the quality of life of the
+                    low-income rural population while at the same time seeking to assure an effective and efficient
+                    contribution by the rural economy to the national development process. For that purpose, support
+                    will be given to the development of low-income sectors in rural areas through various combinations
+                    of efforts geared to the specific circumstances of each local community. The focus area of the
+                    foundation include (a) Participatory Governance (b) Agriculture And Natural Resources Management (c)
+                    Non-Farm Enterprise And Employment (d) Access To Finance and (e) Productive Physical Infrastructure.
+                </p>
+                <p>
+                    The rural development activities include;
+                </p>
+
+                <div align="justify">
+                    <ul>
+                        <li class="style2">Promoting poverty eradication in rural areas</li>
+                        <li class="style2">&nbsp;Promoting pro-poor planning and budgeting at the national and local
+                            levels</li>
+                        <li class="style2">&nbsp;Addressing basic needs and enhancing provision of and access to
+                            services as a precursor to improve livelihoods and as an enabling factor of people’s
+                            engagement in productive activities</li>
+                        <li class="style2">Providing social protection programmes to benefit, inter alia, the vulnerable
+                            households, in particular the aged, persons with disabilities and unemployed many of whom
+                            are in rural areas</li>
+                        <li class="style2">&nbsp;Build social capital and resilience in rural communities</li>
+                        <li class="style2">&nbsp;Empower women and small-scale farmers, and indigenous peoples,
+                            including through securing equitable land tenure supported by appropriate legal frameworks
+                        </li>
+                        <li class="style2">&nbsp;Promote equitable access to land, water, financial resources and
+                            technologies by women, indigenous peoples and other vulnerable groups</li>
+                        <li class="style2">Promote safe and environmentally sound waste management practices;&nbsp;</li>
+                        <li class="style2">Promote women’s empowerment and gender equality in rural areas</li>
+                        <li class="style2">&nbsp;Involve women in decision-making in all activities related
+                            to&nbsp;rural development</li>
+                        <li class="style2">Take measures that promote access to and ownership of means of production,
+                            including land, capital, entrepreneurship, by women</li>
+                        <li class="style2">&nbsp;Promote gender equality as well as take measures to achieve equal
+                            opportunities for women and men in all aspects of&nbsp;rural development</li>
+                        <li class="style2">Carry out extensive education, and awareness-raising on the rights of women
+                            and the concept of empowerment and gender equality in rural areas.&nbsp;</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

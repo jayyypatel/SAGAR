@@ -1,0 +1,96 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Education for All</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Education for All</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Education is a right, like the right to have proper food or a roof over your head. Article 26 of the
+                    1948 Universal Declaration of Human Rights states that “everyone has the right to education”.
+                    Education is not only a right but a passport to human development. It opens doors and expands
+                    opportunities and freedoms. It contributes to fostering peace, democracy and economic growth as well
+                    as improving health and reducing poverty. The ultimate aim of Education for All (EFA) is sustainable
+                    development.
+                    <br>
+                    – United Nations
+                </p>
+                <div align="justify">
+                    <ul>
+                        <li class="style2"><strong>Education beats poverty:</strong>&nbsp;one extra year of schooling
+                            increases a person’s earnings by up to 10%. 171 million people could be lifted out of
+                            poverty if all students in low-income countries left school with basic reading skills.</li>
+                        <li class="style2"><strong>Education promotes gender equality</strong>&nbsp;by helping women
+                            control how many children they have. In Mali, women with secondary education or higher have
+                            an average of three children, while those with no education have an average of seven
+                            children.</li>
+                        <li class="style2"><strong>Education reduces child mortality:</strong>&nbsp;a child born to a
+                            mother who can read is 50% more likely to survive past age five. In Indonesia, child
+                            vaccination rates are 19% when mothers have no education and 68% when mothers have at least
+                            secondary school education.</li>
+                        <li class="style2"><strong>Education contributes to improved maternal health:</strong>women with
+                            higher levels of education are most likely to delay and space out pregnancies, and to seek
+                            health care and support.</li>
+                        <li class="style2"><strong>Education helps combat HIV, malaria and other preventable
+                                diseases.</strong>&nbsp;In addition, it facilitates access to treatment and fights
+                            against stigma and discrimination.</li>
+                        <li class="style2"><strong>Education encourages environmental sustainability.</strong>&nbsp;It
+                            allows people make decisions that meet the needs of the present without compromising those
+                            of future generations. The&nbsp;<a
+                                href="http://www.unescobkk.org/education/esd/un-decade-of-esd/">UN Decade of Education
+                                for Sustainable Development (DESD)</a>, launched in 2005, urges countries to rethink
+                            education, curricula and teaching practice in ways that complement the drive to achieve EFA.
+                        </li>
+                        <li class="style2"><strong>Education helps global development.</strong>&nbsp;An estimated $16
+                            billion in aid is needed annually to reach the EFA goals in poor countries. However, in 2008
+                            poor countries received only $2 billion in aid for basic education. The worldwide military
+                            expenditure for 2009 was $1.5 trillion.</li>
+                    </ul>
+                </div>
+                <p><strong>Education for All Goals</strong></p>
+                <div align="justify"><span class="style2">
+                    <ul>
+                    
+                        <ul>
+                          <li class="style2">Goal  1: Expand early childhood care and education</li>
+                          <li class="style2">Goal  2: Provide free and compulsory primary education for all</li>
+                          <li class="style2">Goal  3: Promote learning and life skills for young people and adults</li>
+                          <li class="style2">Goal  4: Increase adult literacy</li>
+                          <li class="style2">Goal  5: Achieve gender parity</li>
+                          <li class="style2">Goal  6: Improve the quality of education</li>
+                        </ul>
+                    </ul></span></div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

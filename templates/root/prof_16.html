@@ -1,0 +1,60 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Family Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Family Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Families can be a source of support, encouragement and love but sometimes relationships within
+                    families are put under strain and family members feel isolated or overlooked. There are various
+                    reasons for family counseling such as (a) disruption after separation or divorce (b) debt (c)
+                    problems with adolescents or older children (d) children leaving home…..
+                </p>
+                <p>
+                    Counselors can help members relate to each other’s feelings and then work out the differences giving
+                    every family member a voice and an opportunity to be heard without fear or favor. The counselor can
+                    meet the family together and different members separately too. Since the family is a system, change
+                    is best facilitated by working with the family as a whole. Neither the individual nor the family is
+                    blamed for any problem. Families are helped to recognize factors that contribute to a given problem.
+                    They can then jointly participate in finding solutions. Counseling is a different experience for
+                    everyone, and what happens in your sessions will depend very much on what you hope to get out of it,
+                    and on the unique needs of your family. You can expect Family Counseling to help you to build
+                    stronger relationships between every member of the family and help you to work together as a team.
+                </p>
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

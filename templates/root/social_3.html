@@ -1,0 +1,53 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Self Help Group</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Self Help Group</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li{
+        font-size:medium;
+        color:black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Self-Help Group refers to self-governed, peer controlled, informal group of people with same
+                    socio-economic background and having a desire to collectively perform common purposes. Here poor
+                    people voluntarily come together to save whatever amount they can save conveniently out of their
+                    earnings, to mutually agree to contribute to a common fund and to lend to the members for meeting
+                    their productive and emergent needs. SHG is a holistic programme of micro-enterprises covering all
+                    aspects of self-employment, organization of the rural poor into self Help groups and their capacity
+                    building, planning of activity clusters, infrastructure build up, technology, credit and marketing.
+                    It emphasis on activity clusters based on the resources and the occupational skills of the people
+                    and availability of markets. The main objective of this programme is to bring the beneficiaries
+                    above the poverty line by providing income generating assets to them through bank credit and
+                    government subsidy. The Self-Help Groups (SHPs) are the major component of this scheme.
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

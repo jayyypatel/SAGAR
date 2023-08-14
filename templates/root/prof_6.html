@@ -1,0 +1,50 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Corporate Communication</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Corporate Communication</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                <p align="justify" class="style2">The role of communication is not confined to academic phase of life
+                    but goes beyond it. Often people are self-assured that they are expert, skilled in their domain area
+                    and hardly pay attention to clarity of expression and communication behaviors. In reality,
+                    Communication is a learned verbal and non-verbal skill that must be continually refined. Further,
+                    the corporate sector has diverse culture for production enhancement which calls for every employee
+                    to be well versed with communication strategies. It requires a high level of communication
+                    competence-an awareness of what’s appropriate for the situation, person, the skills to perform in a
+                    specific fashion, and the motivation to do so. Additionally, the effectiveness of an employee grows
+                    from a willingness to accept the challenges arising out of cross-cultural communication. So,
+                    corporate communication includes strategically, clearly and logically organizing thoughts followed
+                    by communicating expectations, explanations, asking, informing and responding to the
+                    person/situation. Certainly, the role of communication in corporate is complex. One needs to
+                    acquaint self with the art and science of effective communication. </p>
+                <p align="justify" class="style2">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

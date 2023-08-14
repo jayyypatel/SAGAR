@@ -1,0 +1,63 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Personal Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Personal Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Individual counseling is focused on the individual's immediate or near future concerns. Individual
+                    counseling may encompass career counseling and planning, grief after a loved one dies or dealing
+                    with problems at a job before they become big. Individual counseling is a one-on-one discussion
+                    between the counselor and the client, who is the person seeking treatment. The two form an alliance,
+                    relationship or bond that enables trust and personal growth. Personal counseling is a process of
+                    self-discovery and growth. It can help increase self-confidence, improve relationships, solve
+                    problems, achieve educational goals, and make good decisions for emotional, intellectual, physical,
+                    and spiritual well-being.
+                </p>
+                <p>
+                    In individual counseling, you and your counselor meet one on one in a private, confidential and
+                    professional setting. The counseling relationship is safe, genuine, warm and accepting where your
+                    counselor accepts you as you are without forming any judgments about you. The counselor listens to
+                    you and tries to understand your life situation, helps you to explore your thoughts, feelings and
+                    emotions regarding your life situations. The counselor would help you identify aspects of your life
+                    that you would like to change, help identify goals for yourself, enables you to manage your
+                    challenges better; work on improving yourself/your relationships and progress on the goals that you
+                    set for yourself. You may discuss different perspectives and approaches to the challenge at hand.
+                    You also explore and understand the emotional aspects of the situation and deal with them.
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

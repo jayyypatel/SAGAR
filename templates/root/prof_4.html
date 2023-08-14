@@ -1,0 +1,73 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Research methods and methodology &amp; Report
+                Writing</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Research methods and methodology &amp; Report
+                    Writing</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                </p>
+                <p align="justify" class="style2">There are two main approaches to a research problem - quantitative and
+                    qualitative methods.&nbsp; Quantitative methods are used to examine the relationship between
+                    variables with the primary goal being to analyze and represent that relationship mathematically
+                    through statistical analysis.&nbsp; This is the type of research approach most commonly used in
+                    scientific research problems.&nbsp; Qualitative methods are chosen when the goal of the research
+                    problem is to examine, understand and describe a phenomenon. &nbsp;These methods are a common choice
+                    in social science research problems and are often used to study ideas, beliefs, human behaviors and
+                    other research questions that do not involve studying the relationship between variables.&nbsp;Once
+                    the main approach to the research problem has been determined,&nbsp;there are several research
+                    designs for each type of approach that may be considered. &nbsp;</p>
+                <div align="justify">
+                    <ul>
+                        <li class="style2"><strong>Report writing:</strong> A research report is a completed study that
+                            reports an investigation or exploration of a problem identifies questions to be addressed,
+                            and includes data collected, analyzed, and interpreted by the researcher.</li>
+                    </ul>
+                </div>
+                <p align="justify" class="style2">Journal Articles <br>
+                    Presentations at conferences<br>
+                    Theses and Dissertations<br>
+                    Books</p>
+                <div align="justify">
+                    <ul>
+                        <li class="style2"><strong>Research presentation</strong></li>
+                    </ul>
+                </div>
+                <p align="justify" class="style2">Report<br>
+                    Presentation<br>
+                    Poster<br>
+                    Article<br>
+                    Research Paper<br>
+                    Working Paper<br>
+                    Case Study</p>
+                <p align="justify" class="style2">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

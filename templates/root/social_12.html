@@ -1,0 +1,78 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Children Rights and Child Protection</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Children Rights and Child Protection</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Universally child rights are defined by the United Nations and United Nations Convention on the
+                    Rights of the Child (UNCRC). According to the UNCRC Child Rights are minimum entitlements and
+                    freedoms that should be afforded to all persons below the age of 18 regardless of race, colour,
+                    gender, language, religion, opinions, origins, wealth, birth status or ability and therefore apply
+                    to all people everywhere. The UN finds these rights interdependent and indivisible, meaning that a
+                    right cannot be fulfilled at the expense of another right. The purpose of the UNCRC is to outline
+                    the basic human rights that should be afforded to children. There are four broad classifications of
+                    these rights. These four categories cover all civil, political, social, economic and cultural rights
+                    of every child. Foundation is committed to child rights including;
+                </p>
+                <div align="justify">
+                    <ul>
+                        <li class="style2">Right to Survival:</li>
+                        <li class="style2">Right to Protection</li>
+                        <li class="style2">Right to Participation</li>
+                        <li class="style2">Right to Development</li>
+                    </ul>
+                </div>
+                <p>
+                    UNICEF considers child protection as the prevention of or responding to the incidence of abuse,
+                    exploitation, violence and neglect of children. This includes commercial sexual exploitation,
+                    trafficking, child labour and harmful traditional practices, such as female genital
+                    mutilation/cutting and child marriage. Protection also allows children to have access to their other
+                    rights of survival, development, growth and participation. UNICEF maintains that when child
+                    protection fails or is absent children have a higher risk of death, poor physical and mental health,
+                    HIV/AIDS infection, educational problems, displacement, homelessness, vagrancy and poor parenting
+                    skills later in life.
+                </p>
+                <p>
+                    In India The National Commission for Protection of Child Rights (NCPCR) was set up in March 2007
+                    under the Commission for Protection of Child Rights Act, 2005, an Act of Parliament (December 2005).
+                    The Commission's Mandate is to ensure that all Laws, Policies, Programmes, and Administrative
+                    Mechanisms are in consonance with the Child Rights perspective as enshrined in the Constitution of
+                    India and also the UN Convention on the Rights of the Child. The Child is defined as a person in the
+                    0 to 18 years age group.
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

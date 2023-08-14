@@ -1,0 +1,72 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Financial advisory</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span>Financial advisory</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                <p align="justify" class="style2">
+                </p>
+                <ul>
+
+                    
+                            <ul>
+                                <li>
+                                    <p align="justify" class="style2">A financial advisor is one who provides
+                                        financial advice or guidance to customers for compensation. Financial
+                                        advisors (or advisers) can provide many different services, such as:</p>
+                                    <div align="justify"><span class="style2">
+                                            <ul>
+
+                                                <ul>
+                                                    <li class="style2">Investment management</li>
+                                                    <li class="style2">Accounting</li>
+                                                    <li class="style2">Income tax preparation</li>
+                                                    <li class="style2">Estate planning</li>
+                                                    <li class="style2">Financial Planning</li>
+                                                    <li class="style2">Portfolio management</li>
+                                                    <li class="style2">Risk management</li>
+                                                    <li class="style2">Tax planning</li>
+                                                    <li class="style2">Investment Analysis</li>
+                                                    <li class="style2">Insurance</li>
+                                                    <li class="style2">Banking</li>
+                                                    <li class="style2">Broking</li>
+                                                    <li class="style2">Equity Market</li>
+                                                </ul>
+                                            </ul>
+                                        </span></div>
+                                    <ul>
+                                    </ul>
+                                </li>
+                            
+                    </ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

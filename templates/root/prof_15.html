@@ -1,0 +1,52 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Corporate Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Corporate Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Corporate counseling services focus on working with groups and individual employees around their
+                    feelings and reactions to events that can spark challenging emotional responses. Counseling takes
+                    care of employee’s mental health and emotional well-being with a resulting increase in personal
+                    awareness and self-efficacy. Corporate counseling aims at engaging employees in making healthy
+                    lifestyle choices by providing the employees and the organization with the tools, resources, and
+                    knowledge to create a health supportive work environment. Corporate Counseling also offers workshops
+                    and programs for leadership development and structured mentoring programs.
+                </p>
+                
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

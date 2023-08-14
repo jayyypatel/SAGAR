@@ -1,0 +1,179 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block title %}
+  - Donate Us
+{% endblock title %}
+
+{% block meta_tags %}
+<meta name="keywords"
+    content="Sagar, Foundation, sagar foundation,Social Work, Social Contribution, Research, Data Analysis, Awareness,  Publication, Journal, Research Paper, Donation, Professional">
+<meta name="description"
+    content="SAGAR Foundation is a Government approved Registered Trust (Redg. No
+    E/21046/Ahmedabad)
+    working on a philosophy of “Social Service with Professional Approach”.">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% endblock meta_tags %}
+
+{% block body %}
+
+{% for message in messages %}
+<script type="text/javascript" language="JavaScript">
+    alert('{{message}}')
+
+</script>
+{% endfor %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Donate Us</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+
+                <li><span class="show-for-sr">Current: </span> Donate Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content-section module">
+    <div class="row">
+
+
+
+
+        <div class="content-wrapper">
+            <div class="medium-3 small-12 columns">
+                <div class="contact-info">
+                    <img src="{% static 'images/logo_withoutbg.png' %}" alt="Calling Girl" />
+                </div>
+                <div class="contact-info">
+                    <h4>SAGAR Foundation</h4>
+                    <p> M - 2, Shrinandnagar Part 4, Sonal Cinema Road, Vejalpur Ahmedabad 380051</p>
+                </div>
+                <div class="contact-info">
+                    <h4>Get in Touch</h4>
+                    <p><strong>Office: </strong>+91 9898387329<br>
+                        <strong>Mail: </strong>info[at]sagarfoundation.org<br>
+
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <h4>Follow Us</h4>
+                    <div class="socialicons">
+                        <a href="https://www.facebook.com/sagarfoundation2016/"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-9 small-12 columns">
+                <div style="color: black;">
+                    <h1>Bank Details: SAGAR Foundation</h1>
+                    <b> A/C Name:</b>  &nbsp; SAGAR Foundation <br>
+                    <b>Bank :</b> &nbsp; State Bank of India <br>
+                    <b>Branch:</b> &nbsp; Shrinandnagar, Vejalpur 13169 <br>
+                    <b>A/C No:</b> &nbsp; 35562317522 <br>
+                    <b>IFSC Code:</b> &nbsp; SBIN0013169 <br>
+                    <b>Address:</b> &nbsp; M - 2, Shrinandnagar Part 4 <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sonal Cinema Road <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vejalpur <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ahmedabad 380051 <br>
+                </div><hr>
+                <h1>Donation Receipt Form</h1>
+                <form action="." method="post">
+                    {% csrf_token %}
+
+                    <div class="contact-form">
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Name*
+                                    {{form.name}}
+                                </label>
+                            </div>
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Your Email *
+                                    {{form.email}}
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    PAN Number *
+                                    {{form.pan_no}}
+                                </label>
+                            </div>
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Contact Number *
+                                    {{form.contact}}
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Date Of Donation *
+                                    {{form.date_ofdonation}}
+                                </label>
+                            </div>
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Amount(Rs) *
+                                    {{form.entered_amount}}
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Donation Mode *
+                                    {{form.donation_mode}}
+                                </label>
+                            </div>
+                            
+
+                        </div>
+
+                        <div class="row">
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Your Address *
+                                    {{form.address}}
+                                </label>
+
+                            </div>
+                            <div class="medium-6 small-12 columns">
+                                <label>
+                                    Transaction Details*
+                                    {{form.transaction_detail}}
+                                </label>
+                            </div>
+                        </div>
+                        <center><input type="submit" class="button primary" value="Donate Us Now" />
+                            <input type="reset" class="button primary" value="Reset" />
+                        </center>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+</div>
+{% endblock body %}

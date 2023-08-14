@@ -1,0 +1,62 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Empowerment of Persons with Disabilities</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Empowerment of Persons with Disabilities</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p{
+        font-size:medium;
+        color:black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row" >
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    According to estimated by World Bank one billion people, or 15 % of the world’s population,
+                    experience some form of disability, and disability prevalence is higher for developing countries.
+                    One-fifth of the estimated global population or between 110 million and 190 million people
+                    experience significant disabilities. Persons with disabilities, on average as a group, are more
+                    likely to experience adverse socioeconomic outcomes than persons without disabilities, such as less
+                    education, worse health outcomes, less employment, and higher poverty rates. Persons with
+                    disabilities face discrimination and barriers that restrict them from participating in society on an
+                    equal basis with others every day. They are denied their rights to be included in the general school
+                    system, to be employed, to live independently in the community, to move freely, to vote, to
+                    participate in sport and cultural activities, to enjoy social protection, to access justice, to
+                    choose medical treatment and to enter freely into legal commitments such as buying and selling
+                    property.
+                </p>
+                <p >
+                    The protection guaranteed in other human rights treaties, and grounded in the Universal Declaration
+                    of Human Rights, should apply to all. Persons with disabilities have, however, remained largely
+                    ‘invisible’, often side-lined in the rights debate and unable to enjoy the full range of human
+                    rights. In recent years, there has been a revolutionary change in approach, globally, to close the
+                    protection gap and ensure that persons with disabilities enjoy the same standards of equality,
+                    rights and dignity as everyone else.
+                </p>
+                <p >
+                    SAGAR Foundation is committed to work for the empowerment of persons with disabilities, through
+                    education, training, counseling, guidance, employment etc. Foundation aims at developing Disability
+                    Research Network (DRN) to undertake special research project for empowerment of persons with
+                    disabilities via networking and capacity building exercises.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

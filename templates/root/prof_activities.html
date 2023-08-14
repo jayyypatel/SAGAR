@@ -1,0 +1,134 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+<div id="loading">
+        <div id="loading-center">
+                <div id="loading-center-absolute">
+                        <div id="object"></div>
+                </div>
+        </div>
+</div>
+{% block body %}
+
+<div class="title-section module">
+        <div class="row">
+                <div class="small-12 columns">
+                        <h1>Professional Activities</h1>
+                </div>
+                <div class="small-12 columns">
+                        <ul class="breadcrumbs">
+                                <li><a href="{% url 'root:index' %}">Home</a></li>
+                                <li><span class="show-for-sr">Current: </span> Professional Activities</li>
+                        </ul>
+                </div>
+        </div>
+</div>
+
+<div class="content-section module">
+        <div class="welcome-message module">
+                <div class="row">
+                        <center>
+                                <div style="margin-bottom: 5px;">
+                                        <h2 style="color:darkorange"> <b> Professional Activities</b></h2>
+                                </div>
+                                <hr
+                                        style="height:2px;border-width:0;color:gray;background-color:gray;margin-top: 10px;">
+                                <h3><b> Research Projects: </b></h3>
+                                <ul style="list-style:none;color:black">
+                                        <li class="cat-item cat-item-5"><a
+                                                        href="{% static 'SAGAR_Research Report.pdf' %}"
+                                                        style="font-size:large;color: blue;"><b><u>1. AN EMPIRICAL STUDY
+                                                                        OF SOCIAL IMPACT OF
+                                                                        LEVERAGING<br>
+                                                                        FINANCIAL STRATEGIES FOR INDIAN CORPORATES
+                                                                </u></b></a>
+                                        </li>
+                                        <br>
+                                        <li class="cat-item cat-item-3"><a href="{% url 'root:prof_1' %}"
+                                                        style="font-size: large;color: blue;"><b> <u> Research
+                                                                        Counseling (SAGAR Research
+                                                                        Academy)</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-4"><a href="{% url 'root:prof_2' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Data
+                                                                        Analysis</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-6"><a href="{% url 'root:prof_3' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Application of
+                                                                        Computer for Research</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_4' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Research methods and
+                                                                        methodology &amp; Report
+                                                                        Writing</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_5' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Communication
+                                                                        Training</u> </b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_6' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Corporate
+                                                                        Communication</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_7' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Content
+                                                                        development</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_8' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Financial
+                                                                        advisory</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_9' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Market
+                                                                        Research</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_10' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Doctoral
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_11' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Research
+                                                                        publication</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_12' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Career
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_13' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Personal
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_14' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Psychological
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_15' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Corporate
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_16' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Family
+                                                                        Counseling</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_17' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Web
+                                                                        Designing</u></b></a>
+                                        </li>
+                                        <li class="cat-item cat-item-2"><a href="{% url 'root:prof_18' %}"
+                                                        style="font-size:large;color: blue;"><b><u>Digital
+                                                                        Marketing</u></b></a>
+                                        </li>
+
+
+                                </ul>
+
+
+                        </center>
+
+                </div>
+        </div>
+</div>
+
+
+{% endblock body %}

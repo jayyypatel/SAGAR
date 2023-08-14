@@ -1,0 +1,64 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Career Counseling</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Career Counseling</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    Career counseling is generally focused on issues such as career exploration, career change, personal
+                    career development and other career related issues. Career counseling helps the Person to select a
+                    course of study that may help him/her to get into job. A career counselor helps person / candidates
+                    to get into a career that is suited to their personality, interest, skills, resources and
+                    temperament. Career Counseling is helpful for people of all ages and in different stages of life. It
+                    is helpful for school students, graduates and those wishing to make a mid-career change. Process of
+                    Career Counseling includes;
+                </p>
+                <div align="justify">
+                    <ul>
+                      <li>Relationship  Building</li>
+                      <li>Problem  Assessment</li>
+                      <li>Goal  setting</li>
+                      <li>Counseling  Intervention</li>
+                      <li>Evaluation</li>
+                      <li>Career  counseling sessions</li>
+                      <li>An  in-depth consultation with an experienced counselor to arrive at career options</li>
+                      <li>Information  regarding relevant courses and institutes</li>
+                      <li>A  detailed report with Career Profile and Study Routes</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

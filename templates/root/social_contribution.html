@@ -1,0 +1,94 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div id="object"></div>
+        </div>
+    </div>
+</div>
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Social Contribution</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><span class="show-for-sr">Current: </span> Social Contribution</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <center>
+                <div style="margin-bottom: 5px;">
+                    <h2 style="color:darkorange"> <b> Social Contribution</b></h2>
+                </div>
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray;margin-top: 10px;">
+
+                <ul style="list-style:none;color:black">
+                    <li class="cat-item cat-item-3"><a href="{% url 'root:social_1' %}"
+                            style="font-size: large;color: blue;"><b> <u> Empowerment of Persons with
+                                    Disabilities</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-5"><a href="{% url 'root:social_2' %}"
+                            style="font-size:large;color: blue;"><b><u>Women Empowerment</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-4"><a href="{% url 'root:social_3' %}"
+                            style="font-size:large;color: blue;"><b><u>Self Help Group</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-6"><a href="{% url 'root:social_4' %}"
+                            style="font-size:large;color: blue;"><b><u>Self Employment Training</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_5' %}"
+                            style="font-size:large;color: blue;"><b><u>Education for All</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_6' %}"
+                            style="font-size:large;color: blue;"><b><u>AIDS Awareness</u> </b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_7' %}"
+                            style="font-size:large;color: blue;"><b><u>Legal Aid </u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_8' %}"
+                            style="font-size:large;color: blue;"><b><u>Rural Development Program</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_9' %}"
+                            style="font-size:large;color: blue;"><b><u>Computer literacy and awareness</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_10' %}"
+                            style="font-size:large;color: blue;"><b><u>Safe Drinking Water for All</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_11' %}"
+                            style="font-size:large;color: blue;"><b><u>Non Conventional Energy</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_12' %}"
+                            style="font-size:large;color: blue;"><b><u>Children Rights and Child Protection</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_13' %}"
+                            style="font-size:large;color: blue;"><b><u>Micro Finance</u></b></a>
+                    </li>
+                    <li class="cat-item cat-item-2"><a href="{% url 'root:social_14' %}"
+                            style="font-size:large;color: blue;"><b><u>Environmental Protection and Sustainable
+                                    Development</u></b></a>
+                    </li>
+
+
+                </ul>
+
+
+            </center>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock body %}

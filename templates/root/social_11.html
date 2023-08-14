@@ -1,0 +1,85 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Non Conventional Energy</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Non Conventional Energy</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    With increasing demand for energy and with fast depleting conventional sources of energy such as
+                    coal, petroleum, natural gas, etc. the non-conventional sources of energy such as energy from sun,
+                    wind, biomass, tidal energy, geo-thermal energy and even energy from waste material are gaining
+                    importance. This energy is abundant, renewable, pollution free and eco-friendly.
+                </p>
+                <p>
+                    It can be more conveniently supplied to urban, rural and even remote areas. Thus it is capable of
+                    solving the twin problems of energy supply in a decentralized manner and helping in sustaining
+                    cleaner environment. It is the energy of the future. No wonder, non-conventional energy is fast
+                    catching the imagination of the people in India.
+                </p>
+                <p>
+                    According to energy experts, India’s non- conventional energy potential is estimated at about 1,
+                    95,000 MW. An estimate of 31 per cent of this potential comes from sun, 30 per cent from
+                    ocean-thermal, 26 per cent from bio-fuel and 13 per cent from wind.
+                </p>
+                <p>
+                    Foundation aims at promoting use of non-conventional energy sources through awareness and research
+                    in the areas of:
+                </p>
+                <span class="style2">
+                    <ul>
+                    
+                    
+                  <div align="justify">
+                      <ul>
+                        <li class="style2">Solar  Energy</li>
+                        <li class="style2">Solar  Thermal Energy</li>
+                        <li class="style2">Wind  Energy</li>
+                        <li class="style2">Biogas</li>
+                        <li class="style2">Small  Hydro Power</li>
+                        <li class="style2">Geothermal  Energy:</li>
+                        <li class="style2">Tidal  Energy</li>
+                        <li class="style2">Wave  Energy</li>
+                        <li class="style2">Ocean  Thermal Energy Conversion</li>
+                        <li class="style2">Energy  from Waste</li>
+                      </ul>
+                  </div>
+                    <p align="justify" class="style2">&nbsp;</p>
+                    <p align="justify" class="style2">&nbsp;</p>
+                    <p align="justify" class="style2">&nbsp;</p>
+                  
+                  
+                  </ul></span>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Self Employment Training</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Self Employment Training</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    As reported by National Academy of RUDSETI, India has a glorious record of entrepreneurial
+                    achievements. Tremendous growth of Indian Economy during the last decade has been driven by the
+                    entrepreneurs, who have explored the potential of the country and unleashed their entrepreneurship
+                    to create wealth for the country. Most of these achievers are first generation entrepreneurs, who
+                    hail from non entrepreneurial back ground. Experiments & researches have proved that it is possible
+                    to develop entrepreneurship by motivation, proper training & facilitation.
+                </p>
+                <p>
+                    Proposed Self-employment training programs will include:
+                </p>
+                <div align="justify">
+                    <ul>
+                        <li class="style2">Entrepreneurial training</li>
+                        <li class="style2">Business counseling</li>
+                        <li class="style2">Technical assistance</li>
+                        <li class="style2">Requirements to engage in activities relating to setting up a business and
+                            becoming self-employed.</li>
+                        <li class="style2">Management Training</li>
+                        <li class="style2">Market need assessment training</li>
+                    </ul>
+                    <span class="style2">Accounting and Financial Management </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

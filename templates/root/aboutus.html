@@ -1,0 +1,182 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+<div id="loading">
+  <div id="loading-center">
+    <div id="loading-center-absolute">
+      <div id="object"></div>
+    </div>
+  </div>
+</div>
+
+{% block title %}
+  - About Us
+{% endblock title %}
+  
+{% block meta_tags %}
+<meta name="keywords"
+    content="Sagar, Foundation, sagar foundation,Social Work, Social Contribution, Research, Data Analysis, Awareness,  Publication, Journal, Research Paper, Donation, Professional">
+<meta name="description"
+    content="SAGAR Foundation is a Government approved Registered Trust (Redg. No
+    E/21046/Ahmedabad)
+    working on a philosophy of “Social Service with Professional Approach”.">
+
+{% endblock meta_tags %}
+{% block body %}
+
+<div class="title-section module">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1>About Us</h1>
+    </div>
+    <div class="small-12 columns">
+      <ul class="breadcrumbs">
+        <li><a href="{% url 'root:index' %}">Home</a></li>
+        <li><span class="show-for-sr">Current: </span>about-us</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="content-section module">
+
+  <div class="welcome-message module">
+    <div class="row">
+      <div class="medium-6 small-12 columns">
+        <img src="{% static 'images/logo_withoutbg.png' %}" alt="Logo Background" style="padding-left: 50px;" />
+      </div>
+      <br>
+      <div class="medium-6 small-12 columns">
+        <h2>About <span>Sagar Foundation</span></h2>
+        <h3>(Origin of life)</h3>
+        <p style="color: black;font-size:medium">SAGAR Foundation is a Government approved Registered Trust (Redg. No E/21046/Ahmedabad)
+          working on a philosophy of <b>“Social Service with Professional Approach”</b>. With the vision to build
+          self-sustained social service organization working towards bridging the gap between social need and
+          social action through research, trust is working towards analysing social need in scientific manners,
+          to identify them and support the society through amalgamation of professional services with social
+          action.</p>
+        <p style="color: black;font-size:medium">SAGAR Foundation is committed towards the upliftment of Bottom of Pyramid through is wide
+          ranging activities from counselling to environment. SAGAR Foundation is engaged in training in the
+          area of research, data analysis, research publication and many other professional and development
+          services as part of its fund-raising activities. Fund generated through professional services is utilized
+          for social services.</b></p>
+
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <center>
+      <div style="margin-bottom: 5px;">
+        <h3 style="color:darkorange"> <b> Vision</b></h3>
+      </div>
+
+      <div style="margin-bottom: 50px;">
+        <h6> To build self sustained social service organization working towards bridging the gap between social need
+          and
+          social action through research.</h6>
+      </div>
+      <br>
+      <div style="margin-bottom: 5px;">
+        <h3 style="color:darkorange"> <b> Mission</b></h3>
+      </div>
+
+      <div style="margin-bottom: 50px;">
+        <h6>To analyze social need in scientific manners, to identify them and support the society through amalgamation
+          of professional services with social action.</h6>
+      </div>
+      <br><br>
+    </center>
+  </div>
+
+  <div class="icons-box-wrap module">
+    <div class="row">
+      <div class="medium-3 small-12 columns">
+        <div class="icon-box">
+          <div class="icon-side float-left">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </div>
+          <div class="info-side float-left">
+            <p><strong>Why to work With Us?</strong><br>
+              Contributing towards social development with
+              professional approach
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="medium-3 small-12 columns">
+        <div class="icon-box">
+          <div class="icon-side float-left">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <div class="info-side float-left">
+            <p><strong>Special Feature</strong><br>
+              Social Service with Professional Approach.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="medium-3 small-12 columns">
+        <div class="icon-box">
+          <div class="icon-side float-left">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+          <div class="info-side float-left">
+            <p><strong>Committed Team</strong><br>
+              Team of professionals committed towards social development
+              through professional approach.
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="medium-3 small-12 columns">
+        <div class="icon-box">
+          <div class="icon-side float-left">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <div class="info-side float-left">
+            <p><strong>Work with Us</strong><br>
+              Join us to contribute towards social cause
+            </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding: 5px;">
+
+   <center>
+      <h2 style="color:darkorange"> <b>Our Documents</b></h2>
+      <hr>
+
+      
+      <h3 style="color:#174873"> <b> SAGAR Foundation Registration Certificate</b></h3>
+      <img src="{% static 'SAGAR Foundation Registration Certificate_png.png' %}" width="80%" height="500">
+      <!-- <embed src="{% static 'SAGAR Foundation Registration Certificate.pdf' %}#toolbar=0" width="80%" height="500" style="border: 1px solid;"> -->
+      <hr><br>
+      <h3 style="color:#174873"> <b> PAN Card</b></h3>
+      <img src="{% static 'Sagar_pan_card_png.png' %}" width="80%" height="500">
+      <hr><br>
+      <h3 style="color:#174873"> <b> Section 12A Certificate</b></h3>
+      <img src="{% static 'section 12A_page-0001.jpg' %}" width="25%" height="500">
+      <img src="{% static 'section 12A_page-0002.jpg' %}" width="25%" height="500">
+      <img src="{% static 'section 12A_page-0003.jpg' %}" width="25%" height="500">
+      <hr><br>
+      <h3 style="color:#174873"> <b> Section 80G Certificate</b></h3>
+      <img src="{% static 'section 80G_page-0001.jpg' %}" width="35%" height="500">
+      <img src="{% static 'section 80G_page-0002.jpg' %}" width="35%" height="500">
+
+    </center>
+  </div>
+
+
+
+</div>
+
+{% endblock body %}

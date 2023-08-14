@@ -1,0 +1,54 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Research publication</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Research publication</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin: right 20px;">
+                <p>
+                    <ul>
+                        <li>Book<strong></strong></li>
+                        <li>Report<strong></strong></li>
+                        <li>Journal<strong></strong></li>
+                        <li>Research  Paper<strong></strong></li>
+                        <li>Article<strong></strong></li>
+                        <li>Case  study<strong></strong></li>
+                        <li>News<strong></strong></li>
+                        <li>Blog<strong></strong></li>
+                            </ul>
+                </p>
+
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

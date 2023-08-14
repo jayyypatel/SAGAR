@@ -1,0 +1,64 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Data Analysis</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:professional_activities' %}">Professional Activities</a></li>
+                <li><span class="show-for-sr">Current: </span> Data Analysis</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+    <div class="welcome-message module">
+        <div class="row">
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                
+                <p align="justify" class="style2">&nbsp;</p>
+                <p align="justify" class="style2">Descriptive statistics<br>
+                    Graphs and Charts<br>
+                    Correlation<br>
+                    Regression<br>
+                    Chi-square<br>
+                    T-test<br>
+                    Independent sample t-test<br>
+                    Paired sample t-test<br>
+                    ANOVA<br>
+                    MANOVA<br>
+                    ANCOVA<br>
+                    Factor Analysis<br>
+                    Cluster Analysis<br>
+                    Conjoint Analysis<br>
+                    Reliability Statistics<br>
+                    Non Parametric test<br>
+                    Time series analysis<br>
+                    Data normalization<br>
+                    Indexing</p>
+                <div align="justify" class="style2"><strong> <b style="color:black"> Use of statistics:</b></strong></div>
+                <p align="justify" class="style2">Inferential Statistics<br>
+                    Significance and Errors<br>
+                    Hypothesis testing<br>
+                    Application of parametric and non parametric tests for hypothesis testing<br>
+                    Qualitative and Quantitative techniques<br>
+                    Application of various statistical tools</p>
+                <p align="justify" class="style2">&nbsp;</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

@@ -1,0 +1,127 @@
+{% extends 'dashboard/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+    <!-- start page content -->
+			<div class="page-content-wrapper">
+				<div class="page-content">
+					<div class="page-bar">
+						<div class="page-title-breadcrumb">
+							<div class=" pull-left">
+								<div class="page-title">Request Profile</div>
+							</div>
+							<ol class="breadcrumb page-breadcrumb pull-right">
+								<li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+										href="{% url 'dashboard:index' %}">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li><a class="parent-item" href="{% url 'dashboard:join_us_request' %}">Join Us request</a>&nbsp;<i class="fa fa-angle-right"></i>
+								</li>
+								<li class="active">Request Profile</li>
+							</ol>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							
+							<!-- BEGIN PROFILE CONTENT -->
+							<div class="profile-content">
+								<div class="row">
+									<div class="card">
+										<div class="card-topline-aqua">
+											<header></header>
+										</div>
+										<div class="white-box">
+											
+											<!-- Tab panes -->
+											<div class="tab-content">
+												<div class="tab-pane active fontawesome-demo" id="tab1">
+													<div id="biography">
+														<div class="row">
+															<div class="col-md-3 col-6 b-r"> <strong>Full Name</strong>
+																<br>
+																<p class="text-muted">{{profile.name}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Mobile</strong>
+																<br>
+																<p class="text-muted">{{profile.contact}}</p>
+															</div>
+															<div class="col-md-3 col-6 b-r"> <strong>Email</strong>
+																<br>
+																<p class="text-muted">{{ profile.email }}</p>
+															</div>
+															<div class="col-md-3 col-6"> <strong>Qualification</strong>
+																<br>
+																<p class="text-muted">{{profile.qualification}}</p>
+															</div>
+														</div>
+														<hr>
+														<h4 class="font-bold">Certificate Number</h4>
+														
+														<ul>
+															<li>{{profile.certificate_no}}</li>
+														</ul>
+														<br>
+														
+														<h4 class="font-bold">Affiliation</h4>
+														
+														<ul>
+															<li>{{profile.affiliation}}</li>
+														</ul>
+														<br>
+														<h4 class="font-bold">Occupation</h4>
+														
+														<ul>
+															<li>{{ profile.occupation }}</li>
+															
+														</ul>
+														<br>
+														<h4 class="font-bold">Address
+														</h4>
+														
+														<ul>
+															<li>{{profile.adress}} </li>
+															
+														</ul>
+														<br>
+														<h4 class="font-bold">Area of Interest in SOCIAL CONTRIBUTION ACTIVITIES
+														</h4>
+														
+														<ul>
+															<li>{{profile.area_intrest_social}} </li>
+															
+														</ul>
+														<br>
+														<h4 class="font-bold">Area of Interest in PROFESSIONAL SERVICES
+														</h4>
+														
+														<ul>
+															<li>{{profile.area_intrest_professional}} </li>
+															
+														</ul>
+														<br>
+														<h4 class="font-bold">Brief Profile
+														</h4>
+														
+														<ul>
+															<li>{{profile.brief_profile}} </li>
+															
+														</ul>
+														<br>
+													</div>
+												</div>
+												
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END PROFILE CONTENT -->
+						</div>
+					</div>
+				</div>
+				<!-- end page content -->
+				
+			</div>
+			<!-- end page container -->
+{% endblock body %}

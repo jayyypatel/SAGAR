@@ -1,0 +1,86 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Responsive Admin Template" />
+    <meta name="author" content="RedstarHospital" />
+    <title>Register | Sagar Foundation</title>
+    <!-- google font -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet"
+        type="text/css" />
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/plugins/iconic/css/material-design-iconic-font.min.css">
+    <!-- bootstrap -->
+    <link href="{% static 'assets/plugins/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" />
+    <!-- Theme Styles -->
+    <link href="{% static 'assets/css/theme/light/theme_style.css' %}" rel="stylesheet" id="rt_style_components"
+        type="text/css" />
+    <!-- style -->
+    <link rel="stylesheet" href="{% static 'assets/css/pages/login.css' %}">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+</head>
+
+<body>
+    <div class="main">
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form" action="{% url 'auth_system:register' %}">
+                            {% csrf_token %}
+
+                            
+                            {% for i in form %}
+                            <div class="form-group">
+                                <div class="">
+                                    {{ i }}
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                            
+                            <!-- <div class="form-group">
+                                <div class="">
+                                    <input name="pwd" type="password" placeholder="Password"
+                                        class="form-control input-height" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="">
+                                    <input name="re-pwd" type="password" placeholder="Repeat Password"
+                                        class="form-control input-height" />
+                                </div>
+                            </div>
+                             -->
+                            <div class="form-group form-button">
+                                <button class="btn btn-round btn-primary" name="signup" id="register">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="{% static 'assets/img/pages/signup.jpg' %}" alt="sing up image"></figure>
+                        <a href="{% url 'auth_system:login' %}" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- start js include path -->
+    <script src="{% static 'assets/plugins/jquery/jquery.min.js' %}"></script>
+    <!-- bootstrap -->
+    <script src="{% static 'assets/plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- end js include path -->
+</body>
+
+
+</html>

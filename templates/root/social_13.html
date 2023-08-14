@@ -1,0 +1,66 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Micro Finance</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Micro Finance</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,
+    li,
+    span {
+        font-size: medium;
+        color: black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Microfinance is a general term to describe financial services to low-income individuals or to those
+                    who do not have access to typical banking services. Microfinance is also the idea that low-income
+                    individuals are capable of lifting themselves out of poverty if given access to financial services.
+                    According to World Bank nearly three billion people in developing countries have little or no access
+                    to formal financial services. Financial services for poor people are a powerful instrument for
+                    reducing poverty, enabling them to build assets, increase incomes, and reduce their vulnerability to
+                    economic stress. Formal financial services such as savings, loans, and money transfers enable poor
+                    families to invest in enterprises, better nutrition, improved living conditions, and the health and
+                    education of their children. Microfinance has also been a powerful catalyst for empowering women. In
+                    the area of microfinance, Foundation aims at leveraging the benefits such as;
+                </p>
+                <div align="justify"><span class="style2">
+                        <ul>
+
+                            <ul>
+                                <li class="style2">Access</li>
+                                <li class="style2">Better loan repayment rates</li>
+                                <li class="style2">Extending education</li>
+                                <li class="style2">Improved health and welfare</li>
+                                <li class="style2">Sustainability&nbsp;</li>
+                                <li class="style2">Job creation</li>
+                            </ul>
+                        </ul>
+                    </span></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

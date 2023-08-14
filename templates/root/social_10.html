@@ -1,0 +1,61 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Safe Drinking Water for All</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><span class="show-for-sr">Current: </span> Safe Drinking Water for All</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<style>
+    p,li,span{
+        font-size:medium;
+        color:black
+    }
+</style>
+
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <p>
+                    Water is a fundamental human need. Each person on Earth requires at least 20 to 50 liters of clean,
+                    safe water a day for drinking, cooking, and simply keeping themselves clean. Polluted water isn’t
+                    just dirty—it’s deadly. Some 1.8 million people die every year of diarrheal diseases like cholera.
+                    Tens of millions of others are seriously sickened by a host of water-related ailments—many of which
+                    are easily preventable. The United Nations considers universal access to clean water a basic human
+                    right, and an essential step towards improving living standards worldwide. Water-poor communities
+                    are typically economically poor as well, their residents trapped in an ongoing cycle of poverty.
+                </p>
+                <p>
+                    India’s huge and growing population is putting a severe strain on all of the country’s natural
+                    resources. Most water sources are contaminated by sewage and agricultural runoff. India has made
+                    progress in the supply of safe water to its people, but gross disparity in coverage exists across
+                    the country. Although access to drinking water has improved, the World Bank estimates that 21% of
+                    communicable diseases in India are related to unsafe water. In India, diarrhea alone causes more
+                    than 1,600 deaths daily—the same as if eight 200-person jumbo-jets crashed to the ground each day.
+                    Hygiene practices also continue to be a problem in India. Latrine usage is extremely poor in rural
+                    areas of the country; only 14% of the rural population has access to a latrine. Hand washing is also
+                    very low, increasing the spread of disease. In order to decrease the amount of disease spread
+                    through drinking-water, latrine usage and hygiene must be improved simultaneously.
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'dashboard/layout.html' %}
+{% load static %}
+
+
+{% block body %}
+
+<div class="page-content-wrapper">
+    <div class="page-content">
+        <div class="page-bar">
+            <div class="page-title-breadcrumb">
+                <div class=" pull-left">
+                    <div class="page-title">Contact Us request List</div>
+                </div>
+                <ol class="breadcrumb page-breadcrumb pull-right">
+                    <li><i class="fa fa-home"></i>&nbsp;<a class="parent-item"
+                            href="{% url 'dashboard:index' %}">Home</a>&nbsp;<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li><a class="parent-item" href="{% url 'dashboard:contact_us_request' %}">Contact Us
+                            Request</a>&nbsp;<i class="fa fa-angle-right"></i>
+                    </li>
+                    <li class="active">Contact Us Request List</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tabbable-line">
+
+
+                    <div class="tab-content">
+                        <div class="tab-pane active fontawesome-demo" id="tab1">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-box">
+                                        <div class="card-head">
+                                            <header>Contact Us Request</header>
+                                            <div class="tools">
+                                                <a class="fa fa-repeat btn-color box-refresh" href="javascript:;"></a>
+                                                <a class="t-collapse btn-color fa fa-chevron-down"
+                                                    href="javascript:;"></a>
+                                                <a class="t-close btn-color fa fa-times" href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body ">
+
+                                            <table
+                                                class="table table-striped table-bordered table-hover table-checkable order-column valign-middle"
+                                                id="example4">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th> Name </th>
+                                                        <th> Email </th>
+                                                        <th> Contact </th>
+                                                        <th> Message </th>
+                                                        <th>
+                                                            <center> date</center>
+                                                        </th>
+                                                        <th> Action </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {% for i in contact_request %}
+                                                    <tr class="odd gradeX">
+                                                        <td>
+                                                            {{i.id}}
+                                                        </td>
+                                                        <td>{{i.name}}</td>
+
+                                                        <td><a href="mailto:{{i.email}}">
+                                                                {{i.email}} </a></td>
+                                                        <td>{{i.m_number}}</td>
+                                                        <td class="left">{{i.message}}</td>
+                                                        <td>{{i.date}}</td>
+                                                        <td>
+
+                                                            <a class="tblDelBtn"
+                                                                href="{% url 'dashboard:delete_contact_request' i.id %}">
+                                                                <i class="fa fa-trash-o"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    {% endfor %}
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

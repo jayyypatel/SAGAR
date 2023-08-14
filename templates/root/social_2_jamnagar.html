@@ -1,0 +1,75 @@
+{% extends 'root/layout.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="title-section module">
+    <div class="row">
+        <div class="small-12 columns">
+            <h1>Tailoring and Cutting Training at Jamanagar</h1>
+        </div>
+        <div class="small-12 columns">
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'root:index' %}">Home</a></li>
+                <li><a href="{% url 'root:social_contribution' %}">Social Contribution</a></li>
+                <li><a href="{% url 'root:social_2' %}">Women Empowerment</a></li>
+                <li><span class="show-for-sr">Current: </span> Tailoring and Cutting Training at Jamanagar</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    p,
+    li {
+        font-size: medium;
+        color: black
+    }
+</style>
+<div class="content-section module">
+
+    <div class="welcome-message module">
+        <div class="row">
+
+            <div class="post-excerpt" style="margin-left: 20px;margin-right: 20px;">
+                <center>
+                    <h4><b> Women Empowerment through Training in the Ready-Made Garment</b></h4>
+                </center>
+                <p>
+                    Economic empowerment is essential for overall empowerment of women. Economic empowerment may be in
+                    the form of job or self-employment, which requires some kind of skills and training. In this
+                    direction, Odhav Tailoring Classes for women from economically backward section of the society were
+                    stated at Jamnagar with the help of local representatives. The objective of the project was to train
+                    local women to have basic knowledge in tailoring and cutting garment. This will help them to get
+                    employed in ready made garment sector or they can start their own venture also. Project started with
+                    batch of 10 women to be trained for six months, with certificate to be provided after completion of
+                    training.
+                </p>
+                <div class="gallery-container">
+                    <center>
+                        <!-- new update  -->
+                        <a href="{% static 'images/q1.jpg' %}" data-lightbox="campus-gallery"
+                            data-title="Odhav Shivan Class">
+                            <img class="gallery-thumb" src="{% static 'images/q1.jpg' %}" alt="">
+                        </a>
+                        <a href="{% static 'images/q2.jpg' %}" data-lightbox="campus-gallery"
+                            data-title="Odhav Shivan Class">
+                            <img class="gallery-thumb" src="{% static 'images/q2.jpg' %}" alt="" />
+                        </a>
+                        <a href="{% static 'images/q3.jpg' %}" data-lightbox="campus-gallery"
+                            data-title="Odhav Shivan Class">
+                            <img class="gallery-thumb" src="{% static 'images/q3.jpg' %}" alt="" />
+                        </a>
+                        <a href="{% static 'images/q4.jpg' %}" data-lightbox="campus-gallery"
+                            data-title="Odhav Shivan Class">
+                            <img class="gallery-thumb" src="{% static 'images/q4.jpg' %}" alt="" />
+                        </a>
+                    </center>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
